@@ -36,9 +36,19 @@
                 <h1>Chavez</h1>
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
-
-            <div><img src="images/chavez-1.jpg" alt=""></div>
-            <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
+            <div id="slides">
+                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
+                <div><img src="images/chavez-2.jpg" alt=""></div>
+                <div><img src="images/chavez-3.jpg" alt=""></div>
+                <div><img src="images/chavez-4.jpg" alt=""></div>
+                <div><img src="images/chavez-5.jpg" alt=""></div>
+                <div><img src="images/chavez-6.jpg" alt=""></div>
+                <div><img src="images/chavez-7.jpg" alt=""></div>
+                <div><img src="images/chavez-8.jpg" alt=""></div>
+                <div><img src="images/chavez-9.jpg" alt=""></div>
+                <div><img src="images/chavez-10.jpg" alt=""></div>
+            </div>
         </header>
 
         <!-- Address, map, hours -->
@@ -79,9 +89,9 @@
             </div>
 
             <!-- TODO add a foundation row wrapping the menu-sections -->
-
+            <div class="row">
                 <!-- TODO write the following HTML for each of the menus.
-
+                
                 There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #breakfast
 
                 Give them a small-2 columns so they line up appropriately next to each other.
@@ -89,32 +99,94 @@
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
                 -->
-                <div class="menu-section" id="NAMEOFSECTION">
-                    <h3>
+<!--                <div class="menu-section" id="NAMEOFSECTION">
+                    <h3> -->
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+<!--                        <a href="#"> -->
                             <!-- TODO name of menu section -->
-                        </a>
+<!--                        </a>
+                    </h3>
+                </div> -->
+                <div class="small-2 columns menu-section" id="breakfast">
+                    <h3>
+                        <a href="#">Breakfast</a>
                     </h3>
                 </div>
-
+                <div class="small-2 columns menu-section" id="lunch">
+                    <h3>
+                        <a href="#">Lunch</a>
+                    </h3>
+                </div>
+                <div class="small-2 columns menu-section" id="dinner">
+                    <h3>
+                        <a href="#">Dinner</a>
+                    </h3>
+                </div>
+                <div class="small-2 columns menu-section" id="dessert">
+                    <h3>
+                        <a href="#">Dessert</a>
+                    </h3>
+                </div>
+                <div class="small-2 columns menu-section" id="cocktail">
+                    <h3>
+                        <a href="#">Cocktails</a>
+                    </h3>
+                </div>
+                <div class="small-2 columns menu-section" id="wine">
+                    <h3>
+                        <a href="#">Wine</a>
+                    </h3>
+                </div>
+            </div>
             <!-- TODO add a foundation row to wrap around this content -->
+            <div class="row">
                 <div id="menu-section-content" class="menu-section-content">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
-
-                        <div class="menu-group">
+<!--                    <div class="row"> -->
+                        <div class="small-6 columns menu-group">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <h4>Raw Bar</h4>
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
-
+                            <div class="menu-item">
                                 <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
-
+                                <div class="menu-item-dish">malpeque oyster</div>
+                                <p class="menu-item-ingredients">prince edward island, canada</p>
+                                <div class="menu-item-price">3</div>
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            </div>
+                            <div class="menu-item">
+                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
+                                <div class="menu-item-dish">malpeque oyster</div>
+                                <p class="menu-item-ingredients">prince edward island, canada</p>
+                                <div class="menu-item-price">3</div>
+                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            </div>
                         </div>
-                </div>
+                        <div class="small-6 columns menu-group">
+                            <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
+                            <h4>Entrees</h4>
 
+                            <!-- TODO for each item on the menu, write a div.menu-item. -->
+                            <div class="menu-item">
+                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
+                                <div class="menu-item-dish">carne asada</div>
+                                <p class="menu-item-ingredients">flank steak, grilled onions, “pico de gallo”</p>
+                                <div class="menu-item-price">19</div>
+                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            </div>
+                            <div class="menu-item">
+                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
+                                <div class="menu-item-dish">carne asada</div>
+                                <p class="menu-item-ingredients">flank steak, grilled onions, “pico de gallo”</p>
+                                <div class="menu-item-price">19</div>
+                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            </div>
+                        </div>
+<!--                    </div> -->
+                </div>
+            </div>
         </section>
 
         <!-- Social media -->

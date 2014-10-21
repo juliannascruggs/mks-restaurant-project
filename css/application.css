@@ -72,7 +72,7 @@ section {
 .location,
 .hours {
     /* TODO give these two divs some padding so that they line up with the map */
-    padding-top: 2rem;
+    padding-top: 2em;
 }
 
 .hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ 
@@ -90,44 +90,73 @@ section {
 
 .menu {
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
+    color: #221c12;
+    background: #fffdf0;
+    padding-bottom: 3.5em;
 }
 
 .menu h2 {
     /* TODO make this font size larger than the Foundation default */
+    font-size: 4rem;
 }
 
 .menu h2, .menu h3, .menu h4 {
     /* TODO give these headers a color of #221c12 */
+    color: #221c12;
 }
 
-
+.menu h2,
+.menu-section {
 /* TODO center the text of the h2 and menu-section */
+    text-align: center;
+}
+.menu-section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
+    color: rgba(34, 28, 18, .75);
+    padding-bottom: .15em;
+    border-bottom: 3px solid;
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
 }
 
-
+.menu-section h3 a:hover {
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
+    color: rgba(34, 28, 18, 1.0);
 
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
-.menu-section-content {
-    /* TODO give this some space below the menu links */
 }
 
 
+.menu-section-content {
+    /* TODO give this some space below the menu links */
+    margin-bottom: 2em;
+}
+
+/* TODO give each menu item some bottom margin */
 .menu-item {
-    /* TODO give each menu item some bottom margin */
+    margin-bottom: 1.5em;
 }
 
 /* TODO style the menu-item-dish to be bold */
+.menu-item-dish {
+}
 
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
+.menu-item-ingredients {
+    font-style: italic;
+}
 
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
-
+.menu-item-price {
+    font-weight: 700;
+    display: inline-block;
+    opacity: .5;
+}
 
 .menu-item-name-no-description {
     display:inline;
