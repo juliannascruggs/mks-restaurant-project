@@ -68,7 +68,8 @@ ceviche traditional
     avocado, tomato, jalapeño 9
 hamachi
     “horchata”, orange 11
-vegan ceviche chayote, cauliflower, beet, orange 8 
+vegan ceviche 
+    chayote, cauliflower, beet, orange 8 
 
 ## Entrées
 

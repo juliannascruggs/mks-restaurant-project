@@ -44,28 +44,32 @@
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
+            <div class="row">
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
+                <div class="small-12 medium-4 columns location">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
-                    111 east cesar chavez
-                    austin, texas 78701
-                    512.478.2291
+                    <p class="">at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a><br /><br />
+                    111 east cesar chavez<br />
+                    austin, texas 78701<br />
+                    <a href="tel:+5124782291">512.478.2291</a>
+                    </p>
                 </div>
 
-                <div class="map">
+                <div class="small-12 medium-4 columns map">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    <img src="images/map.png" href="goo.gl/maps/qgnVW">
                 </div>
 
-                <div class="hours">
+                <div class="small-12 medium-4 columns hours">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                    <p>
+                        <span class="hours-label">breakfast:</span><span class="hours-value"> 6:30–11am</span><br />
+                        <span class="hours-label">lunch:</span><span class="hours-value"> 11am–3pm</span><br />
+                        <span class="hours-label">limited menu:</span><span class="hours-value"> 3–5pm</span><br />
+                        <span class="hours=label">dinner:</span><span class="hours-value"> 5–10pm</span><br />
+                    </p>
                 </div>
-
+            </div>
         </section>
 
         <!-- Menu -->
@@ -78,7 +82,7 @@
 
                 <!-- TODO write the following HTML for each of the menus.
 
-                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #menu-section-breakfast
+                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #breakfast
 
                 Give them a small-2 columns so they line up appropriately next to each other.
 
