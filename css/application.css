@@ -170,13 +170,14 @@ section {
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
 .menu-item-ingredients {
     font-style: italic;
+    display: inline;
     margin-bottom: 0;
 }
 
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
 .menu-item-price {
     font-weight: bold;
-    display: inline-block;
+    display: inline;
     opacity: .5;
     padding-left: 1em;
     line-height: 1.6em;
