@@ -118,7 +118,8 @@
         "ingredients": " horchata, orange",
         "price": 11
     }, {
-        "dish": "vegan ceviche chayote, cauliflower, beet, orange",
+        "dish": "vegan ceviche",
+        "ingredients": "chayote, cauliflower, beet, orange",
         "price": 8
     }]
 }, {
